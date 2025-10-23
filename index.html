@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 28.9px; text-indent: -28.9px; font: 12.0px Menlo; color: #800080}
+    p.p2 {margin: 0.0px 0.0px 0.0px 43.3px; text-indent: -43.4px; font: 12.0px Menlo; color: #800080}
+    p.p3 {margin: 0.0px 0.0px 0.0px 57.8px; text-indent: -57.8px; font: 12.0px Menlo; color: #800080}
+    p.p4 {margin: 0.0px 0.0px 0.0px 72.2px; text-indent: -72.2px; font: 12.0px Menlo; color: #800080}
+    p.p5 {margin: 0.0px 0.0px 0.0px 28.9px; text-indent: -28.9px; font: 12.0px Menlo; color: #800080; min-height: 14.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 86.7px; text-indent: -86.7px; font: 12.0px Menlo; color: #800080}
+    p.p7 {margin: 0.0px 0.0px 0.0px 101.1px; text-indent: -101.2px; font: 12.0px Menlo; color: #800080}
+    p.p8 {margin: 0.0px 0.0px 0.0px 115.5px; text-indent: -115.6px; font: 12.0px Menlo; color: #800080}
+    p.p9 {margin: 0.0px 0.0px 0.0px 130.0px; text-indent: -130.1px; font: 12.0px Menlo; color: #800080}
+    span.s1 {font-variant-ligatures: no-common-ligatures}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!doctype html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;Show Images — Then Crash&lt;/title&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>html,body { height:100%; margin:0; font-family: system-ui, sans-serif; background:#f0f6ff; display:flex; align-items:center; justify-content:center; }</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>.container { text-align:center; padding:20px; background:white; box-shadow: 0 6px 24px rgba(0,0,0,0.12); border-radius:12px; }</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>.images { display:flex; gap:12px; align-items:center; justify-content:center; }</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>.images img { max-width:380px; max-height:320px; border-radius:8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); object-fit:cover; }</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>.controls { margin-top:12px; color:#333; font-size:14px; }</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>button { padding:8px 12px; border-radius:8px; border:none; cursor:pointer; background:#2b6cb0; color:white; }</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>.mode-select { margin-left:8px; padding:6px; }</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>.notice { margin-top:8px; color:#666; font-size:13px; }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="container" role="main"&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Here are your images&lt;/h1&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="images" id="images"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;img src="money.jpeg" alt="money image" id="img1" /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;img src="petsimx.jpeg" alt="petsimx image" id="img2" /&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="controls"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;label for="mode"&gt;Crash mode:&lt;/label&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;select id="mode" class="mode-select" title="Choose how the page will 'crash'"&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>&lt;option value="throw"&gt;throw (uncaught exception)&lt;/option&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>&lt;option value="freeze"&gt;freeze (busy loop) — may hang tab&lt;/option&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>&lt;option value="close"&gt;close (attempt to close window)&lt;/option&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/select&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button id="start"&gt;Start (5s)&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="notice"&gt;Images must be in the same folder as this file: &lt;code&gt;money.jpeg&lt;/code&gt; and &lt;code&gt;petsimx.jpeg&lt;/code&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>(function(){</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const btn = document.getElementById('start');</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const select = document.getElementById('mode');</span></p>
+<p class="p5"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>// Default delay before crash (ms)</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const DELAY = 5000;</span></p>
+<p class="p5"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>// Helper: freeze the main thread (bad idea except for testing)</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>function freezeIndefinitely() {</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>// tight loop: intentionally CPU-bound</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>// WARNING: this will hang the tab until the loop breaks or the tab is closed</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>while (true) {</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>// do small meaningless work</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>Math.sqrt(Math.random() * 1e6);</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p5"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>// Trigger an uncaught exception</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>function throwCrash() {</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>// throw in a microtask so it's uncaught by local try/catch</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>Promise.resolve().then(() =&gt; {</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>throw new Error("Intentional crash: uncaught exception");</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p5"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>// Attempt to close the window (often blocked)</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>function tryClose() {</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>try {</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>// approach that sometimes works if the window was opened by script:</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>window.open('', '_self');</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>window.close();</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>} catch (e) {</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>// fallback: remove page content and throw</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>document.body.innerHTML = '&lt;pre style="padding:20px"&gt;Window close blocked by browser. The page will now throw an error.&lt;/pre&gt;';</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>throwCrash();</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p5"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>btn.addEventListener('click', () =&gt; {</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>const mode = select.value;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>btn.disabled = true;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>select.disabled = true;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>btn.textContent = `Waiting ${DELAY/1000}s...`;</span></p>
+<p class="p5"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>setTimeout(() =&gt; {</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>btn.textContent = 'Crashing now...';</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>try {</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">            </span>if (mode === 'throw') {</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">              </span>throwCrash();</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">            </span>} else if (mode === 'freeze') {</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">              </span>// small delay so the UI updates before freezing</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">              </span>setTimeout(freezeIndefinitely, 50);</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">            </span>} else if (mode === 'close') {</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">              </span>tryClose();</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">              </span>throwCrash();</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>} catch (err) {</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">            </span>// If a synchronous throw happens, rethrow to be uncaught</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; { throw err; }, 0);</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>}, DELAY);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p5"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>// If images fail to load, show a simple message</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>function hideOnError(img) {</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>img.addEventListener('error', () =&gt; {</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>img.style.display = 'none';</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>const warn = document.createElement('div');</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>warn.style.color = '#b00020';</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>warn.style.marginTop = '8px';</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>warn.textContent = `Failed to load ${img.alt}. Make sure "${img.src}" exists.`;</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">          </span>document.querySelector('.controls').appendChild(warn);</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>hideOnError(document.getElementById('img1'));</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>hideOnError(document.getElementById('img2'));</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>})();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
